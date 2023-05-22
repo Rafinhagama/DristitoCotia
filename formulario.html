@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+</html>
+<head>
+  
+
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+    
+    .form-container {
+      background-image: linear-gradient(to right, rgba(0, 0, 255, 0.993) 0%, rgba(0, 0, 255, 0.747) 33%, rgba(255, 255, 0, 0.829) 33%, rgba(255, 255, 0, 0.822) 66%, rgba(255, 0, 0, 0.712) 66%, red 100%);
+      border-radius: 10px;
+      padding: 30px;
+    }
+    
+    .form-container label {
+      color: rgb(0, 0, 0);
+    }
+
+    .form-container input {
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+    
+    .form-container h1,
+    .form-container h2 {
+      text-align: center;
+    }
+    
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .form-container label,
+    .form-container input {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .form-container button {
+      padding: 10px 20px;
+      background-color: #1da73b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>DESAFIO DE DAIMOKU</h1>
+    <h2>Distrito Cotia</h2><br><br>
+  
+    <form action="https://api.sheetmonkey.io/form/3HT8msXAme7Yt8PVePbuzC" method="post">
+      <label for="nome">NOME COMPLETO:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+    
+      <label for="horario">TEMPO DE DAIMOKU:</label>
+      <input type="time" id="horario" name="horario" required>
+      
+      <button type="submit">ENVIAR</button>
+    </form>
+  </div>
+</body>
+
